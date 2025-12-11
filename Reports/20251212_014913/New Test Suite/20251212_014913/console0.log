@@ -1,0 +1,33 @@
+2025-12-12 01:49:14.832 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: /Applications/[10.4.2] Katalon Studio Enterprise.app/Contents/Eclipse/configuration/org.eclipse.osgi/132/0/.cp/resources/logback/logback-execution.xml
+2025-12-12 01:49:14.833 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: /Users/nabeel/git/Test3suit/Include/config/log.properties
+2025-12-12 01:49:15.363 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/New Test Suite
+2025-12-12 01:49:15.418 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Nabeel Shaikh
+2025-12-12 01:49:15.418 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = Test3suit
+2025-12-12 01:49:15.420 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = nabeel - 192.168.1.30
+2025-12-12 01:49:15.420 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Mac OS X 64bit
+2025-12-12 01:49:15.421 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.1.30
+2025-12-12 01:49:15.421 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.4.2.0
+2025-12-12 01:49:15.645 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-12-12 01:49:15.645 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/New Test Case
+2025-12-12 01:49:15.667 WARN  c.k.k.c.h.s.CDTVideoRecorder             - No alive Web Driver found!
+2025-12-12 01:49:15.820 DEBUG testcase.New Test Case                   - 1: openBrowser("")
+2025-12-12 01:49:15.894 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-12-12 01:49:15.897 INFO  c.k.k.c.w.util.WebDriverPropertyUtil     - User set preference: ['args', '[--window-size=1500,1000, --remote-allow-origins=*]']
+2025-12-12 01:49:15.915 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Dec 12, 2025 1:49:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 142, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 142
+2025-12-12 01:49:18.812 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 46df226aab3f03fdc55f6a85f21c5fee
+2025-12-12 01:49:18.814 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 142.0.7444.176
+2025-12-12 01:49:18.815 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
+2025-12-12 01:49:18.816 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.34.0
+2025-12-12 01:49:18.822 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-12-12 01:49:18.901 DEBUG testcase.New Test Case                   - 2: navigateToUrl("https://katalon-demo-cura.herokuapp.com/")
+2025-12-12 01:49:22.340 DEBUG testcase.New Test Case                   - 3: click(findTestObject("Object Repository/Page_CURA Healthcare Service/a_btn-make-appointment"))
+2025-12-12 01:49:23.127 DEBUG testcase.New Test Case                   - 4: verifyElementText(findTestObject("Object Repository/Page_CURA Healthcare Service/h2_Login"), "Login")
+2025-12-12 01:49:23.492 DEBUG testcase.New Test Case                   - 5: verifyElementPresent(findTestObject("Object Repository/Page_CURA Healthcare Service/h2_Login"), 0)
+2025-12-12 01:49:23.500 WARN  c.k.k.c.webui.common.WebUiCommonHelper   - Timeout '0' is invalid. Using default page load timeout: '10'
+2025-12-12 01:49:24.070 INFO  c.k.k.c.c.internal.VideoRecorderService  - Video recording for test case 'Test Cases/New Test Case' .
+2025-12-12 01:49:24.071 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/New Test Case
+2025-12-12 01:49:24.255 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2025-12-12 01:49:24.255 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/New Test Suite
+2025-12-12 01:49:24.255 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
