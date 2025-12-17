@@ -24,4 +24,4 @@ jobs:
         with:
           version: '10.4.2'
           projectPath: ${{ github.workspace }}
-          args: '-noSplash -runMode=console -retry=0 -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -executionProfile="default" -apiKey="43fa4b0d-319f-40a9-813b-12355a7edfa5"'
+          args: '-noSplash -runMode=console -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection" -browserType="Chrome" -apiKey="43fa4b0d-319f-40a9-813b-12355a7edfa5"'
