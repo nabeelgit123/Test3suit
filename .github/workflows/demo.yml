@@ -24,4 +24,4 @@ jobs:
         with:
           version: '10.4.2'
           projectPath: ${{ github.workspace }}
-          args: 'katalonc -noSplash -runMode=console -retry=0 -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -executionProfile="default" -apiKey="43fa4b0d-319f-40a9-813b-12355a7edfa5" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true'
+          args: '-noSplash -runMode=console -retry=0 -testSuitePath="Test Suites/New Test Suite" -browserType="Chrome" -executionProfile="default" -apiKey="43fa4b0d-319f-40a9-813b-12355a7edfa5"'
