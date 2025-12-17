@@ -1,27 +1,22 @@
-name: Run Katalon Tests
-
+# Workflow to run Basic Test
+name: Basic Test Workflow
 on:
   workflow_dispatch:
-
 jobs:
-  katalon:
+  run-basic-test:
     runs-on: windows-latest
-
+    timeout-minutes: 60
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: Set up Katalon
-        run: |
-          echo "Katalon setup complete"
-
-      - name: Execute Katalon Test Suite Collection
-        run: |
-          cmd /c ""C:\Users\runneradmin\.katalon\10.4.2\Katalon_Studio_Engine_Windows_64-10.4.2\katalonc.exe" ^
-          -noSplash ^
-          -runMode=console ^
-          -projectPath="D:\a\Test3suit\Test3suit" ^
-          -retry=0 ^
-          -testSuiteCollectionPath="Test Suites/New Test Suite Collection" ^
-          -browserType="Chrome" ^
-          -apiKey="43fa4b0d-319f-40a9-813b-12355a7edfa5""
+      # Set screen resolution
+      - name: 'Screen resolution 1920x1080'
+        run: 'Set-DisplayResolution -Width 1920 -Height 1080 -Force'
+      # Checkout code
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Run Katalon test
+      - name: Run Basic Test
+        uses: katalon-studio/katalon-studio-github-action@v2
+        with:
+          version: '10.4.2'
+          projectPath: ${{ github.workspace }}
+          args: '-noSplash -runMode=console -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection" -browserType="Chrome" -apiKey="43fa4b0d-319f-40a9-813b-12355a7edfa5"'
